@@ -1,6 +1,5 @@
 /*
-  - stampare la lista
-  - far in modo che cliccando sull'item diventi sbarrato 
+  - quando viene cliccata la x l'elemento viene eliminato dall'array
 */
 
 const root = new Vue({
@@ -32,7 +31,12 @@ const root = new Vue({
     ],
   },
 
+  methods: {
 
-
+    removeOnClick(index){
+      this.obj.splice(index,1)
+      console.log(index);
+    }
+  },
 
 });
