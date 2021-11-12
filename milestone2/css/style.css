@@ -1,0 +1,76 @@
+body {
+  background-color: white;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  color: rgb(10, 10, 59);
+}
+
+.inputgs {
+  font-size: 18px;
+  width: 300px;
+  border: .5px solid darkgray;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);;
+}
+
+.btn {
+  font-weight: 600;
+  background-color: rgb(211, 208, 208);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.363);
+}
+
+.box{
+  width: 900px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 20px;
+  padding: 16px 
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  border-bottom: .5px solid darkgray;
+  padding: 16px 0 0 6px;
+  margin-right: 20px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li i {
+  color: darkgray;
+  vertical-align: middle;
+  padding-right: 16px;
+}
+
+li i:hover {
+  color: rgb(170, 24, 24);
+}
+
+li:hover {
+  background-color: rgba(255, 255, 255, 0.884);
+}
+
+.active {
+  text-decoration: line-through;
+  color: darkgray;
+}
+
