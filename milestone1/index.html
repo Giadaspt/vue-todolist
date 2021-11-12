@@ -36,13 +36,15 @@
 
       <div class="box justify-content-center">
         <ul>
-          <li 
-            v-for="item in obj" 
-            :class="indexCount">
-            <p>{{obj[count].text}}</p>
+          <li
+            v-for="(item, index) in obj" 
+            @click="item.done = !item.done">
+            <p>{{item.text}}</p>
             <i class="fas fa-times"></i>
           </li>
+
         </ul>
+        
       </div>
 
     </div>

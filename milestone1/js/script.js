@@ -11,7 +11,6 @@ const root = new Vue({
 
     logo: 'boolean',
     button: 'Aggiungi alla lista',
-    count: 0,
 
     obj: [
       {
@@ -33,20 +32,7 @@ const root = new Vue({
     ],
   },
 
-  methods: {
-  
-    indexCount(){
-      this.count++;
 
-      for(count in obj){
-
-        if(this.count === this.obj.length){
-          this.count;
-        }
-      }
-
-    },
-  },
 
 
 });
