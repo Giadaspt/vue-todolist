@@ -36,20 +36,10 @@
 
       <div class="box justify-content-center">
         <ul>
-          <li>
-            <p class="active"> da fare</p>
-            <i class="fas fa-times"></i>
-          </li>
-          <li>
-            <p> da fare</p>
-            <i class="fas fa-times"></i>
-          </li>
-          <li>
-            <p> da fare</p>
-            <i class="fas fa-times"></i>
-          </li>
-          <li>
-            <p> da fare</p>
+          <li 
+            v-for="item in obj" 
+            :class="indexCount">
+            <p>{{obj[count].text}}</p>
             <i class="fas fa-times"></i>
           </li>
         </ul>

@@ -47,8 +47,7 @@ ul li {
 
 li {
   border-bottom: .5px solid darkgray;
-  padding-top: 16px;
-  padding-left: 6px;
+  padding: 16px 0 0 6px;
   margin-right: 20px;
 }
 
