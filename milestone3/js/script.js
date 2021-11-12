@@ -11,8 +11,6 @@ const root = new Vue({
     logo: 'boolean',
     button: 'Aggiungi alla lista',
     newStr:'',
-    newText: {},
-
     obj: [
       {
         text: 'Cose da fare oggi',
@@ -43,7 +41,14 @@ const root = new Vue({
     addList(){
       //this.newText = this.newText.this.newStr
 
-      this.obj.push(this.newText);
+      this.obj.push({
+        text : this.newStr,
+        done : false
+      });
+
+      this.newStr = '';
+
+
     }
 
   },

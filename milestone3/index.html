@@ -26,12 +26,14 @@
 
     <div class="d-flex justify-content-center pt-4">
       <input 
+      v-model="newStr"
       class="inputgs p-2"
-      type="text" placeholder="Cose da fare">
-  
+      type="text" placeholder="Cose da fare"
+      @keyup.13= "addList">
+      
+
       <button 
         @click="addList"
-        v-model="addList.newStr"
         class="btn ms-2">{{button}}</button>
     </div>
 
