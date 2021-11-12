@@ -14,19 +14,19 @@ const root = new Vue({
 
     obj: [
       {
-        text: 'Cose da fare',
+        text: 'Cose da fare oggi',
         done: false,
       },
       {
-        text: 'Cose da ',
+        text: 'Cose da fare domani',
         done: false,
       },
       {
-        text: 'Cose fare',
+        text: 'Cose da fare dopodomani',
         done: false,
       },
       {
-        text: ' fare',
+        text: 'Cose da fare in giornata',
         done: false,
       },
     ],

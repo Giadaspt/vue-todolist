@@ -39,7 +39,7 @@
           <li
             v-for="(item, index) in obj" 
             @click="item.done = !item.done">
-            <p>{{item.text}}</p>
+            <p :class="{active: item.done}">{{item.text}}</p>
             <i class="fas fa-times"></i>
           </li>
 
