@@ -10,6 +10,8 @@ const root = new Vue({
 
     logo: 'boolean',
     button: 'Aggiungi alla lista',
+    newStr:'',
+    newText: {},
 
     obj: [
       {
@@ -36,7 +38,14 @@ const root = new Vue({
     removeOnClick(index){
       this.obj.splice(index,1)
       console.log(index);
+    },
+
+    addList(){
+      //this.newText = this.newText.this.newStr
+
+      this.obj.push(this.newText);
     }
+
   },
 
 });

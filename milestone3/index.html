@@ -29,7 +29,10 @@
       class="inputgs p-2"
       type="text" placeholder="Cose da fare">
   
-      <button class="btn ms-2">{{button}}</button>
+      <button 
+        @click="addList"
+        v-model="addList.newStr"
+        class="btn ms-2">{{button}}</button>
     </div>
 
     <div class="container d-flex justify-content-center p-4">
@@ -37,10 +40,11 @@
       <div class="box justify-content-center">
         <ul>
           <li v-for="(item, index) in obj" >
-            <p 
+            <p
               :class="{active: item.done}"
-              @click="item.done = !item.done"
-            >{{item.text}}</p>
+              @click="item.done = !item.done">
+            {{item.text}}
+          </p>
             <i @click="removeOnClick(index)"
             class="fas fa-times"></i>
           </li>
