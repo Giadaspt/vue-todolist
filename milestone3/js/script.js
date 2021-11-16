@@ -29,6 +29,8 @@ const root = new Vue({
         done: false,
       },
     ],
+
+    error: false,
   },
 
   methods: {
@@ -39,18 +41,33 @@ const root = new Vue({
     },
 
     addList(){
-      //this.newText = this.newText.this.newStr
 
-      this.obj.push({
-        text : this.newStr,
-        done : false
-      });
+      this.obj.push(
+        {
+          text : this.newStr.trim(),
+          done : false
+        });
 
-      this.newStr = '';
+        this.newStr = '';
+        
+        if(this.newStr.trim().length < 3 && this.newStr.trim().length == 0){
+          this.error = true;
+
+        } 
 
 
-    }
+        console.log('ok');
 
+      
+    },
+
+    // errorLIst(){
+
+    //   if(this.newStr.trim().length < 3 && this.newStr.trim().length == 0){
+    //     this.error = true;
+    //   } 
+    //   console.log('ok');
+    // }
   },
 
 });

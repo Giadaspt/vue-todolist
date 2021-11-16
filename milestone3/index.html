@@ -24,6 +24,8 @@
       <h1>{{logo}}</h1>
     </header>
 
+    <h4 v-if="error" class="text-center pt-2"> Inserisci almeno 3 lettere</h4>
+
     <div class="d-flex justify-content-center pt-4">
       <input 
       v-model="newStr"
